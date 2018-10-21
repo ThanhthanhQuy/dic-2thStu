@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <bottom>
+   </bottom>
+   <center>
+      <WebView fx:id="Explain" prefHeight="428.0" prefWidth="611.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <AnchorPane prefHeight="351.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" layoutY="67.0" prefHeight="546.0" prefWidth="236.0">
+               <columns>
+                  <TableColumn fx:id="TableCl" prefWidth="235.0" styleClass="ListWord" text="Menu Word" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="76.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="textField" layoutY="2.0" prefHeight="38.0" prefWidth="737.0" promptText="Search" styleClass="input" />
+            <Button layoutY="40.0" mnemonicParsing="false" onAction="#Eng" prefHeight="37.0" prefWidth="120.0" text="E-V">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Eng.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="120.0" layoutY="40.0" mnemonicParsing="false" onAction="#Viet" prefHeight="37.0" prefWidth="117.0" text="V-E">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/30620131741537063.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="add" layoutX="565.0" layoutY="39.0" mnemonicParsing="false" onAction="#add" prefHeight="36.0" prefWidth="62.0" text="add" />
+            <Button fx:id="remove" layoutX="691.0" layoutY="39.0" mnemonicParsing="false" onAction="#Remove" prefHeight="36.0" prefWidth="76.0" text="Remove" />
+            <Button fx:id="exit" layoutX="767.0" layoutY="38.0" mnemonicParsing="false" onAction="#exit" prefHeight="38.0" prefWidth="57.0" text="Exit " />
+            <Button fx:id="edit" layoutX="627.0" layoutY="39.0" mnemonicParsing="false" onAction="#edit" prefHeight="36.0" prefWidth="64.0" text="Edit" />
+            <Button layoutX="737.0" layoutY="2.0" mnemonicParsing="false" onAction="#butEnter" prefHeight="37.0" prefWidth="87.0" text="Search" />
+            <Button fx:id="speakbutton" layoutX="488.0" layoutY="40.0" mnemonicParsing="false" onAction="#clickspeak" prefHeight="34.0" prefWidth="77.0" />
+            <ImageView fitHeight="36.0" fitWidth="24.0" layoutX="515.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/cate4_icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="94.0" prefWidth="824.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="721.0" mnemonicParsing="false" onAction="#Wiki" prefHeight="95.0" prefWidth="102.0" />
+            <ImageView fitHeight="84.0" fitWidth="77.0" layoutX="735.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/1200px-Wikipedia-logo-v2-es.svg.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="619.0" layoutY="1.0" mnemonicParsing="false" onAction="#ggTrans" prefHeight="95.0" prefWidth="102.0" />
+            <ImageView fitHeight="73.0" fitWidth="65.0" layoutX="638.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Google_Translate_Icon.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </bottom>
+</BorderPane>
